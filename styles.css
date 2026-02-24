@@ -1,11 +1,19 @@
 /*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;   /* Important for uneven heights */
 }
 
 .cards img {
     max-width: 25vw;
+    height: auto;              /* Keeps aspect ratio */
     margin: 10px;
     border: 3px solid rgb(0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 8px 0px;
